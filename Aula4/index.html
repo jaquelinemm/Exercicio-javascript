@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="pt_BR">
+ <head><!--cabeçalho-->
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Curso Javascript</title>
+ </head>
+ <body>
+     <!--javascript-->
+    <script> 
+      // CONDICIONAIS
+      function retornaCambio(cambio) {
+         if(1 == '1'){    
+            // true   verifica o valor
+         }
+
+         if (1 === '1'){
+            // false  verifica o valor e tipo
+         }
+
+         if(cambio === 'R$'){
+            return 'Real'
+         } else if (cambio === '$') {
+            return "Dólar";
+         } else {
+            return "Outra moeda";
+         }
+      }
+      var nomeCambio = retornaCambio("R$");
+      console.log(nomeCambio);
+
+      function retornaPessoas(nome){
+         switch (nome) {
+            case 'Carlito':
+               return 'Front-End';
+            case 'Vinicius':
+               return "Back-End";
+            default:
+               return "Ninguem";
+         }
+      }
+      var cargo = retornaPessoas("Carlito");
+      console.log(cargo);
+    </script>
+ </body>
+</html>
