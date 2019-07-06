@@ -6,30 +6,29 @@
     <title>Curso Javascript</title>
  </head>
  <body>
+   <div id ="app">       <!--div é uma divisória-->
+      <button onclick="mostraAlerta()">   <!--onclick é uma função que executa qdo ocorre o clique no botão-->
+         Me pressione
+      </button>
+      <button onmouseover="mostraAlerta()">
+         Passe por mim         
+      </button>
+      <input onkeypress="mostraAlerta()" />
+      <input type="password"  />   <!--type= exibe os tipos de input-->
+
+   </div>
      <!--javascript-->
     <script> 
-     
-     //for, foreach e while
-
-      //for - Recomendado quando se sabe o tamanho do array
-      for(var i = 0; i <= 100;i++){
-     //   console.log(i); //retorna 0,1,2,3,4,5,6,...
+      function mostraAlerta() {   
+         alert("Hello World");
       }
 
-      // While - Recomendado quando não se sabe quantos itens existem no array ou quantas vezes são necessários para rodar
-      var j = 0;
-      while (j < 100){
-       //  console.log(j);
-         j++;
-      }
-      
-      //foreach - Recomendado quando se esta utilizando arrays que podem crescer ou diminuir
-      var vetor = [1,2,3,4,5];
-      vetor.forEach(item => {   //a seta cria a função, é o mesmo que  function(item)
-         console.log(item);
-      });
+    //Observação
+      // Executando função 
+      mostraAlerta();
 
-      var 
+      // Passando a função com parâmetro
+      console.log(mostraAlerta);
 
     </script>
  </body>
